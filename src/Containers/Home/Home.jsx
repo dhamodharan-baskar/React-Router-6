@@ -6,7 +6,6 @@ super(props);
 }
 
 onCLick = () => {
-  console.log('props', this.props)
   this.props.router.navigate('/detail')
 }
 render() {

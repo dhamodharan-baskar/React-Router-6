@@ -9,9 +9,8 @@ import {
   useNavigate,
   useParams
 } from "react-router-dom";
-import Details from "./Containers/Details";
-import Home from "./Containers/Home";
-import Notfound from "./Containers/NotFound";
+import Hooks from "./Containers/Hooks";
+import Markets from "./Containers/Markets";
 
 
 export const withRouter = (Component) =>  {
@@ -34,10 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <Routes>
-         <Route path="/" element={<Home  {...this.props}/>}/>
-         <Route path="/home" element={<Home  {...this.props}/>}/>
-         <Route path="/detail" element={<Details />}/>
-         <Route path="*" element={<Notfound/>}/>
+         <Route path="/" element={<Markets  {...this.props}/>}/>
        </Routes>       
      </div>
     )
